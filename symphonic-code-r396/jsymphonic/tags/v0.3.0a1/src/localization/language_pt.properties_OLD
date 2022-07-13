@@ -1,0 +1,90 @@
+TITLE=JSymphonic
+VERSION=0.2.1 Alpha
+
+####### Various
+WARNING_DEVICE_PATH = O dispositivo Sony n\u00E3o foi encontrado, por favor escolha o direct\u00F3rio correcto na janela de configura\u00E7\u00E3o.
+WARNING_PLAYER_FULL = N\u00E3o podem ser importados titulos, o dispositivo Sony est\u00E1 cheio.
+INVALID_PATH = Caminho Invalido
+
+####### Main window
+### JMenuBar
+FILE = Ficheiro
+QUIT = Sa\u00EDr
+OPTIONS = Op\u00E7\u00F5es
+CONFIGURATION = Configura\u00E7\u00E3o
+APPLY = Aplicar
+CANCEL = Cancelar
+IMPORT=Importar
+EXPORT=Exportar
+SYNC=Sincronizar
+DELETE=Apagar
+DELETE_ALL=Apagar Todos
+SORT_BY=Ordenar pod: 
+SORT_ARTIST_ALBUM_TITLE=Artista/Album/Titulo
+SORT_ARTIST_TITLE=Artista/Titulo
+SORT_ALBUM_TITLE=Album/Titulo
+SORT_GENRE_ARTIST_ALBUM_TITLE=Genero/Artista/Album/Titulo
+
+TITLE_SOURCE=Musica Local
+DEVICE_DETAIL=Detalhes do dispositivo
+DEVICE_TITLES=Detalhes do dispositivo
+
+# Info
+LOADING= Carregando... Aguarde.
+READY= Pronto
+CHANGES_NO_APPLIED= Altera\u00E7\u00F5es por aplicar.
+
+# Problem
+UNKNOWN_FILE=Este ficheiro n\u00E3o \u00E9 suportado. Ficheiro em quest\u00E3o:
+TRANSFER_INFORMATION=Transfer information
+TOTAL_PROGRESS=Progresso total
+EXPORTING = A exportar ficheiros...
+FILES_EXPORTED = ficheiro exportado.
+FILE_EXPORTED = ficheiro exportado.
+NO_EXPORTED = Nenhum ficheiro exportado.
+DELETING = A apagar ficheiros...
+FILES_DELETED = ficheiros foram apagados.
+FILE_DELETED = ficheiro foi apagado.
+NO_DELETED = Nenhum ficheiro apagado.
+ADDING = A adicionar ficheiros...
+FILES_ADDED = ficheiros foram adicionados.
+FILE_ADDED = ficheiro foi adicionado.
+NO_ADDED = Nenhum ficheiro adicionado.
+UPDATING = A actualizar base de dados.
+UPDATED = Base de dados actualizada.
+TRANSFER_COMPLETE = Transfer\u00EAncia conclu\u00EDda!
+
+
+####### Configuration window
+CONFIGURATION_W = JSymphonic - Configura\u00E7\u00E3o
+### Display
+DISPLAY = Ver
+CHOOSE_LAF = Estilo da aplica\u00E7\u00E3o.
+WINDOWS_XP = Windows XP
+LINUX = Linux
+METAL = Tema default do Java, Metal.
+PROBLEM_LOADING_LAF = Ocorreu um problema ao tentar alterar o estilo da aplica\u00E7\u00E3o.
+LANGUAGE = L\u00EDngua
+
+### Paths
+PATHS = Direct\u00F3rios
+DEVICE_PATH = Direct\u00F3rio do dispositivo.
+MUSIC_PATH = Dir\u00E9ctorio local de m\u00FAsica.
+CHANGE = Alterar
+EXPORTED_MUSIC_PATH = Directorio de m\u00FAsica exportada.
+SAME_AS_MUSIC_PATH = Usar o mesmo direct\u00F3rio do direct\u00F3rio local de m\u00FAsica.
+INVALID_PATH = Direct\u00F3rio invalido.
+
+### Transfer panel
+TRANSFER = Transferir
+ALWAYS_TRANSCODE = Converter sempre os ficheiros.
+ONLY_NEEDED_TRANSCODE = Converter apenas quando n\u00E3o compat\u00EDveis.
+MP3_OPTIONS = Op\u00E7\u00F5es MP3
+BITRATE = Bitrate
+
+####### Error
+INVALID_DEVICE_PATH = O direct\u00F3rio escolhido \u00E9 inv\u00E1lido. N\u00E3o foi encontrada a pasta OMGAUDIO.
+INVALID_MUSIC_PATH = O direct\u00F3rio escolhido para a m\u00FAsica local n\u00E3o \u00E9 inv\u00E1lido
+INVALID_IMPORTED_PATH = O direct\u00F3rio escolhido para importar m\u00FAsica n\u00E3o \u00E9 inv\u00E1lido
+
+SAME_PATH= Usar o mesmo direct\u00F3rio

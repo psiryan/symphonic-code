@@ -1,0 +1,96 @@
+ 
+ Sony NW Walkman Amarok MediaDevice Plugin
+===========================================
+
+	Introduction I'm not in a mood to write.
+
+-----------------------------------------------------------------------------------------
+
+ Features
+==========
+
+    None Yet.
+
+-----------------------------------------------------------------------------------------
+    
+ Dependencies
+==============
+
+	None Yet. Maybe a libsonynw...
+
+-----------------------------------------------------------------------------------------
+
+ Creating the build Environment
+================================
+
+	There are two ways of getting amarok, download the source tarball or checkout the
+	most recent version from svn.
+
+ 	
+ 	Amarok from source Tarball:
+ 	
+ 	- Downloading the source Tarball
+ 		1 - mkdir FOLDER
+		2 - cd FOLDER  
+ 		3 - Follow the download instructions under:
+ 				http://amarok.kde.org/wiki/Download:Source
+ 			and stop just before the configure/make stage.
+ 		4 - Copy "sonynw" contents to "AMAROK-FOLDER/src/mediadevice/"
+ 				(!) You MUST Overwrite Makefile.am (!)
+ 			where AMAROK-FOLDER is the folder of the extracted Amarok's source.
+ 	- Checkout unsermake from kde svn
+ 		1 - cd FOLDER
+ 		2 - svn co svn://anonsvn.kde.org/home/kde/tags/unmaintained/3/unsermake
+ 			 		
+
+	Amarok from kde svn:
+	
+	- Checkout amarok to FOLDER
+		1 - mkdir FOLDER
+		2 - cd FOLDER  
+		3 - svn co -N svn://anonsvn.kde.org/home/kde/branches/stable/extragear/multimedia
+		4 - cd multimedia
+ 		5 - svn co svn://anonsvn.kde.org/home/kde/branches/KDE/3.5/kde-common/admin
+ 		6 - svn up amarok
+ 	- Checkout unsermake from kde svn
+ 		1 - cd FOLDER
+ 		2 - svn co svn://anonsvn.kde.org/home/kde/tags/unmaintained/3/unsermake
+
+-----------------------------------------------------------------------------------------
+ 	
+ Building Amarok
+=================
+
+	Using the Amarok source tarball:
+	
+	1 - cd FOLDER
+	2 - FOLDER/unsermake/unsermake -f Makefile.cvs
+		(ex) /home/foo/dev/bar/unsermake/unsermake -f Makefile.cvs 
+	3 - Follow the rest of the instructions under:
+ 				http://amarok.kde.org/wiki/Download:Source
+	 	from the configure/make stage.
+	
+	Using the Amarok from svn:
+	
+	1 - cd FOLDER/multimedia
+	2 - FOLDER/unsermake/unsermake -f Makefile.cvs
+		(ex) /home/foo/dev/bar/unsermake/unsermake -f Makefile.cvs
+	3 - ./configure
+	4 - cd amarok
+	5 - make
+	6 - su -c 'make install'
+ 
+-----------------------------------------------------------------------------------------
+
+ Contributing
+==============
+
+E-mail one of the developers on this project.
+
+
+ Contacts
+==========
+
+WWW : sourceforge.net/projects/symphonic
+MAIL: mephx.x@gmail.com
+MAIL: garthps@users.sourceforge.net

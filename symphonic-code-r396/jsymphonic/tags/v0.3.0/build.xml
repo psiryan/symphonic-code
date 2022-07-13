@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- You may freely edit this file. See commented blocks below for -->
+<!-- some examples of how to customize the build. -->
+<!-- (If you delete it and reopen the project it will be recreated.) -->
+<!-- By default, only the Clean and Build commands use this build script. -->
+<!-- Commands such as Run, Debug, and Test only use this build script if -->
+<!-- the Compile on Save feature is turned off for the project. -->
+<!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
+<!-- in the project's Project Properties dialog box.-->
+<project name="JSymphonic" default="default" basedir=".">
+    <description>Builds, tests, and runs the project JSymphonic.</description>
+    <import file="nbproject/build-impl.xml"/>
+    <target name="jar" description="Make JAR archive." depends="init,compile">
+        <jar destfile="JSymphonic.jar">
+            <fileset dir="build/classes">
+                <include name="*.class"/>
+                <include name="**/*.class"/>
+                <include name="*.png"/>
+                <include name="**/*.png"/>
+                <include name="*.properties"/>
+                <include name="**/*.properties"/>
+                <include name="*.txt"/>
+                <include name="**/*.txt"/>
+                <exclude name="lib/*"/>
+                <exclude name="lib/*/**"/>
+            </fileset>
+<!--
+            <fileset dir="src">
+                <include name="lib/swing-layout-1.0.3.jar"/>
+            </fileset>
+-->
+            <fileset dir="src/lib/swing-layout-1.0.3">
+                <include name="*.class"/>
+                <include name="**/*.class"/>
+            </fileset>
+            <manifest>
+                <attribute name="Main-Class" value="${main.class}"/> 
+                <attribute name="Class-Path" value="../lib/swing-layout-1.0.3.jar"/> 
+            </manifest>
+        </jar>
+    </target>
+    <!--
+                ===============
+                CLEANUP SECTION
+                ===============
+            -->
+    <target depends="init" name="-do-clean">
+        <delete dir="${build.dir}"/>
+    </target>
+</project>

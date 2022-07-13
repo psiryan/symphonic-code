@@ -1,0 +1,161 @@
+TITLE=JSymphonic
+VERSION=0.2.1 Alpha
+
+####### Various
+WARNING_DEVICE_PATH = 無法偵測到Sony隨身聽，請在設定的視窗內設置正確的路徑。
+WARNING_PLAYER_FULL = 隨身聽容量已滿，無法再匯入檔案。
+INVALID_PATH = 無效的路徑
+
+####### Main window
+### JMenuBar
+FILE = 檔案
+QUIT = 離開
+OPTIONS = 選項
+CONFIGURATION = 設定
+
+
+### Various buttons & label
+OK = 確認
+APPLY = 套用
+CANCEL = 取消
+IMPORT=匯入
+EXPORT=匯出
+SYNC=Sync
+DELETE=刪除
+DELETE_ALL=全部刪除
+SORT_BY=Sort by:
+SORT_ARTIST_ALBUM_TITLE=Artist/Album/Title
+SORT_ARTIST_TITLE=Artist/Title
+SORT_ALBUM_TITLE=Album/Title
+SORT_GENRE_ARTIST_ALBUM_TITLE=Genre/Artist/Album/Title
+
+TITLE_SOURCE=本機音樂路徑
+DEVICE_DETAIL=裝置詳細內容
+DEVICE_TITLES=裝置名稱
+
+# Info
+LOADING= 正在載入請稍等...
+READY= 準備就緒
+CHANGES_NO_APPLIED= 改變尚未套用
+
+# Problem
+UNKNOWN_FILE=尚未支援這個檔案
+
+### Transfer panel
+TRANSFER_INFORMATION=傳輸資訊
+TOTAL_PROGRESS=總進度
+EXPORTING = 正在匯出檔案...
+FILES_EXPORTED = 檔案已匯出完成.
+FILE_EXPORTED = 檔案已匯出完成.
+NO_EXPORTED = 沒有匯出檔案.
+DELETING = 正在刪除檔案...
+FILES_DELETED = 檔案已被刪除.
+FILE_DELETED = 檔案已被刪除..
+NO_DELETED = 沒有刪除檔案.
+ADDING = 正在新增檔案...
+FILES_ADDED = 檔案已新增完成.
+FILE_ADDED = 檔案已新增完成.
+NO_ADDED = 沒有新增檔案.
+UPDATING = 正在更新資料庫...
+UPDATED = 資料庫更新完成.
+TRANSFER_COMPLETE = 傳輸完成 !!
+
+
+
+####### Configuration window
+CONFIGURATION_W = JSymphonic - 設定
+### Display
+DISPLAY = 顯示
+CHOOSE_LAF = 介面風格
+WINDOWS_XP = Windows XP
+LINUX = Linux
+METAL = Java default Metal theme
+PROBLEM_LOADING_LAF = 在變更介面風格時發生問題
+LANGUAGE = 語言
+
+### Paths
+PATHS = 路徑
+DEVICE_PATH = 裝置的路徑
+MUSIC_PATH = 本地音樂的路徑
+CHANGE = 變更
+EXPORTED_MUSIC_PATH = 匯出音樂存放的路徑
+SAME_AS_MUSIC_PATH = 使用和本地音樂相同的路徑
+INVALID_PATH = 無效的路徑
+
+### Transfer panel
+TRANSFER = 傳輸
+ALWAYS_TRANSCODE = 一律轉換檔案
+ONLY_NEEDED_TRANSCODE = 只有不相容的檔案才轉檔
+MP3_OPTIONS = MP3 選項
+BITRATE = Bitrate
+
+####### Error
+INVALID_DEVICE_PATH = 您所選擇的裝置路徑是無效的。並沒有發現OMGAUDIO目錄。
+INVALID_MUSIC_PATH = 您所選擇的本機音樂路徑是無效的。
+INVALID_IMPORTED_PATH = 您所選擇的匯入音樂路徑是無效的。
+
+SAME_PATH= 使用相同的路徑
+
+Loading..._Please_wait.=正在讀取中...請稍等
+
+transfert=transfert
+
+playerContent=playerContent
+
+Genres/Artists/Albums/Titles=Genres/Artists/Albums/Titles
+
+Albums/Titles=Albums/Titles
+
+Artists/Titles=Artists/Titles
+
+Artist/Album/Title=Artist/Album/Title
+
+.../...=.../...
+
+Dialog=Dialog
+
+Sony_Device=Sony Device
+
+/org/naurd/media/jsymphonic/ressources/delete.png=/org/naurd/media/jsymphonic/ressources/delete.png
+
+/org/naurd/media/jsymphonic/ressources/cancel.png=/org/naurd/media/jsymphonic/ressources/cancel.png
+
+/org/naurd/media/jsymphonic/ressources/apply.png=/org/naurd/media/jsymphonic/ressources/apply.png
+
+/org/naurd/media/jsymphonic/ressources/export.png=/org/naurd/media/jsymphonic/ressources/export.png
+
+/org/naurd/media/jsymphonic/ressources/import.png=/org/naurd/media/jsymphonic/ressources/import.png
+
+_= 
+
+...=...
+
+cardLoading=cardLoading
+
+256_kpbs=256 kpbs
+
+196_kpbs=196 kpbs
+
+128_kpbs=128 kpbs
+
+96_kpbs=96 kpbs
+
+64_kpbs=64 kpbs
+
+Bitrate__=Bitrate  
+
+Portuguese=Portuguese
+
+French=French
+
+English=English
+
+Traditional Chinese=正體中文
+
+org/naurd/media/jsymphonic/manager/languages=org/naurd/media/jsymphonic/manager/languages
+
+Display=Display
+
+Transfer=Transfer
+
+Paths=Paths

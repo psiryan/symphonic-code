@@ -1,0 +1,310 @@
+##########################################
+##
+## JSymphonic version 0.2.1alpha
+## 09.03.2008
+##
+##########################################
+
+
+ 1) What's new (history)
+ 2) Warning
+ 3) Start with JSymphonic
+ 4) Use of the prgram
+ 5) The program is not working as I'd like, what should I do ?
+ 6) Licence
+ 7) Team and info
+
+
+
+
+
+##########################################
+####
+#### 1) What's new (history)
+####
+##########################################
+
+###################
+What's new in 0.2.1
+
+#### New features:
+- support for OMA files
+- MacOS compatibility (java 1.5 compatibility)
+- multi-lingual capacity (english and french available, swedish, german, portuguese and russian to come)
+- debug mode is available with "-debug" argument
+
+#### Bugs fix 
+- ID3tag reading / characters encoding
+- EA3tag reading
+
+
+
+###################
+ What's new in 0.2
+
+#### New feature: 
+- support for old generation (NW-HD5n, NW-Exxx)
+
+#### Improvement: 
+- reading of information for MP3 file
+
+#### Bugs fixed: 
+- "OK" transfert button
+- name too long
+- available space,...
+
+#### GUI bugs fixed
+- misc...
+
+
+
+###################
+ What's new in 0.2
+#### Bug fix 
+- MP3 support
+
+
+
+###################
+ Intial release 0.1
+
+
+##########################################
+####
+#### 2) Warning
+####
+##########################################
+You have just downloaded a beta version of JSymphonic. This version is only released for testing purpose. You are using this software because of your own will, Symphonic team can't be blamed for any problems !
+
+
+
+##########################################
+####
+#### 3) Start with JSymphonic
+####
+##########################################
+
+## 3.1) Java
+Language used to develop JSymphonic is Java. So this software can be run on Windows, MAC OS, Linux,... But you must have installed last version of Java (Java Virtual Machine), version 1.6 (or even 1.5), downloadable here :
+http://www.java.com/
+
+
+
+
+
+## 3.2) Files
+You have downloaded a zip file containing three files : "JSymphonic-0.XXX.jar" (the program), "symphonic_settings.xml" (the config file that should be placed at the same path as"JSymphonic-0.XXX.jar") and this READ ME.
+
+Files "JSymphonic-0.XXX.jar" and "symphonic_settings.xml" can be placed anywhere (even in the player). If the program doesn't find the player, it will just ask you the right path.
+
+To work, a folder named "OMGAUDIO" or "omgaudio" must exist at the root of the player.
+
+
+
+
+
+
+
+
+## 3.3) Protected players
+Protected players are the one that encrypt MP3 files. Players before the NW-A1000 generation are protected.
+JSymphonic can handle these players if the file "DvID.dat" is present in the player. This file contains the key used to encrypt MP3 files. This file is generated when one use Sony MP3 File Manager (http://www.sonydigital-link.com/DNA/downloads/downloads.asp?r=www.google.fr&c=WM&sc=NWF&t=lp&f=lp_mp3&l=en). File Manager create a folder "MP3FM" at the root of the player and create the "DvID.dat" file into this folder.
+
+Le file "DvID.dat" can be called "DvID.dat" or "DvID.DAT" (JSymphonic is case sensitive). It can be placed into :
+- MP3FM folder
+- at the player root
+- OMGAUDIO folder
+
+Be aware that encrypting file takes more time that simply copying then, so the transfers are slower for these generations.
+
+
+
+
+## 3.4) Non protected players
+Caution ! if your player is not protected, (after the NW-A1000), the file "DvID.dat" should not be present in the player, otherwise JSymphonic will encrypt the MP3 files and they won't be readable by your player.
+
+
+
+
+
+
+
+
+##########################################
+####
+#### 4) Use of the prgram
+####
+##########################################
+
+## 4.1)  Features
+Existing features
+- compatibility with protected and non-protected player
+- delete music from the player
+- manage basic information : title name, album name, artist name, genre, track number
+- export music (i.e. from the player to the computer)
+- manage "mp3" and "oma" formats
+
+Expected features (without priority order)
+- manage all players (even very old generation, as NW-E99...)
+- manage other information : covers, playlists,...
+- modification within the program the titles data (title name, artist name,...)
+- transcode of other format to handle music not in mp3
+
+
+
+
+
+
+## 4.2) How to use the program
+# Configuration
+For the first run, if no player is found, a warning windows pops up and leads you to the configuration of the program (which is also reachable by the menu).
+
+Use the page "Paths" in the configuration to set :
+- the "device path" (be careful, you must enter here the path of the player, and a folder "OMGAUDIO" or "omgaudio" must be present in the player, if not, create an empty folder).
+
+- the "local music path" is used to display your music folder at the left hand of the program.
+
+- the "exported music path" is used to save the music exported from the player to the computer, you can use the same folder as the "local music path" by checking the check box.
+
+
+To conclude with configuration, the "Display page" can be used to change the look and feel of the program (thanks to Java 1.6 !!) and the language.
+
+Linux users, please not that some GTK components don't behave like expected in java program, if you have some trouble (report the bug and) try to use the default java theme : metal.
+
+
+
+# Program Utilization
+
+- To import music : just selected in the left hand of the program the files/folders you want (multiple selection is allowed) and clic the "Import" button. Once you have made all the changes you like, just press the "Apply" button.
+
+- To delete music from the player, just selected in the right hand of the program the titles/albums/artists you want (multiple selection is allowed) and clic the "Delete" button. Once you have made all the changes you like, just press the "Apply" button.
+
+- To export music from the player to the computer : just selected in the right hand of the program the titles/albums/artists you want to export (multiple selection is allowed) and clic the "Export" button. Once you have made all the changes you like, just press the "Apply" button.
+
+- To cancel the changes, just press "cancel" button.
+
+- Caution, if you have a protected player, please read section 3.3).
+
+This is a quick explanation, I let you discover the details by your own !!
+
+
+
+
+
+
+
+
+
+
+##########################################
+####
+#### 5) The program is not working as I'd like, what should I do ?
+####
+##########################################
+
+## 5.1) You've found a bug
+
+To report bug, please use the Symphonic forum from Sourceforge, here :
+https://sourceforge.net/forum/forum.php?forum_id=747001
+
+
+
+## 5.2) A feature is absent or acting in the wrong way
+
+You are welcom to propose idea to improve the program. Just use the Symphonic forum from Sourceforge, here :
+https://sourceforge.net/forum/forum.php?forum_id=747000
+
+
+
+
+
+
+
+
+
+
+
+##########################################
+####
+#### 6) Licence
+####
+##########################################
+
+This program  is free software. You can redistribute it and/or modify it under the terms of the GNU General Public License  - version 2 or later, as published by the Free Software Foundation:
+http://www.gnu.org/licenses/gpl.html.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+
+
+
+
+
+
+
+
+
+
+##########################################
+####
+#### 7) Team and info
+####
+##########################################
+
+## 7.1) Team
+
+## JSymphonic team (active members)
+aingoppa
+danizmax
+nicolas_cardoso
+
+
+## Symphonic team (Sony db, Symphonic and amarok plugin)
+garthps
+mephx
+
+
+## Symphonic team (non active members)
+fla_2
+naurd
+balmat
+julungul
+luismolinaab
+neub
+neil_wallace
+VinnieRoi
+wezzar
+
+
+## Web designer
+ulluss
+
+
+## JSymphonic team (translators)
+humpalumpa (german)
+lenborje (swedish)
+mayday85 (russian)
+mephx (portuguese)
+nicolas_cardoso (french)
+
+
+
+## Alpha testers
+Alpha testers:
+Adrien (HD5 support)
+Andreas (NW-E40x support)
+Beau (debug)
+Guillaume (HD5 support)
+Kurt (oma support)
+Michael (NW-E50x support)
+Michele (MacOS support)
+Philipe (HD5 support)
+Simon (HD5 support)
+
+
+
+## 7.2) Info
+For more detail, please visit our sourceforge page:
+http://sourceforge.net/projects/symphonic/
+
+or contact the developers.

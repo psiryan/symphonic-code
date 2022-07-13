@@ -1,0 +1,259 @@
+##########################################
+##
+## JSymphonic version 0.2.1alpha
+## 09.03.2008
+##
+##########################################
+
+
+ 1) Quoi de neuf (historique)
+ 2) Avertissement
+ 3) Premier pas avec JSymphonic
+ 4) Utilisation du programme
+ 5) Le programme ne marche pas comme je voudrais, qu'est-ce que je fais ?
+ 6) License
+ 7) Equipe et info
+
+
+
+
+
+##########################################
+####
+#### 1) Quoi de neuf (historique)
+####
+##########################################
+
+###################
+Quoi de neuf dans la 0.2.1
+
+#### Nouvelles fonctionnalité:
+- support for OMA files
+- MacOS compatibility (java 1.5 compatibility)
+- multi-lingual capacity (english and french available, swedish, german, portuguese and russian to come)
+- debug mode is available with "-debug" argument
+
+#### Bugs fix 
+- ID3tag reading / characters encoding
+- EA3tag reading
+
+
+
+###################
+ What's new in 0.2
+
+#### New feature: 
+- support for old generation (NW-HD5n, NW-Exxx)
+
+#### Improvement: 
+- reading of information for MP3 file
+
+#### Bugs fixed: 
+- "OK" transfert button
+- name too long
+- available space,...
+
+#### GUI bugs fixed
+- misc...
+
+
+
+###################
+ What's new in 0.2
+#### Bug fix 
+- MP3 support
+
+
+
+###################
+ Intial release 0.1
+
+
+##########################################
+####
+#### 2) Warning
+####
+##########################################
+#### A1. AVERTISSEMENT
+Vous venez de t?l?charger une version beta de JSymphonic. Cette version est seulement destin?e aux beta-testeurs. Vous utilisez cette version beta ? vos risque et p?ril ! L'?quipe de d?veloppement de JSymphonic ne peut ?tre tenue pour responsable de probl?mes apparus apr?s l'utilisation du logiciel !!
+
+
+
+
+
+
+
+
+
+
+##########################################
+#### A2. Change log
+
+## Version 0.2 beta
+- Support des g?n?rations prot?g?es
+- Am?lioration de la lecture des informations des fichier MP3
+- Correction de bug divers (bouton "OK" de transfert, nom de fichier trop long, place disponible,...)
+- Correction de bug graphique
+
+
+
+
+
+
+
+
+
+
+##########################################
+#### A3. Pour commencer
+
+## A3.1 Java
+JSymphonic est d?velopp? en Java, ce qui signifie que le logiciel peut ?tre lanc? sous Windows comme sous MAC OS comme sous Linux,...
+Il vous faut cependant avoir une version suffisamment r?cente de Java install?e sur votre ordinateur (nous parlons plus pr?cisemment de Machine Virtuelle : JVM). Ce logiciel n?cessite la version 1.6 de Java que vous pouvez t?l?charger ici : http://www.java.com/fr/
+
+
+
+
+
+## A3.2 Les fichiers
+Vous avez t?l?cahrger une archive (.zip) avec trois fichiers : "JSymphonic-0.2b.jar" (le programme), "symphonic_settings.xml" (un fichier de configuration qui doit ?tre plac? au m?me endroit que "JSymphonic-0.2b.jar") et ce READ ME.
+
+Les fichiers "JSymphonic-0.2b.jar" et "symphonic_settings.xml" peuvent ?tre plac? n'importe o? (sur le lecteur Sony, ou sur l'ordinateur). La configuration par d?faut suppose qu'ils sont plac?s ? la racine du lecteur, ou dans un dossier qui est ? la racine du lecteur.
+Si ces fichiers ne sont pas plac?s dans dans les emplacements par d?faut, le programme demandera ? la premi?re utilisation l'adresse du lecteur.
+
+Si le lecteur est vide (format?) vous devez cr?er un dossier "OMGAUDIO" ? la racine du lecteur pour faire marcher JSymphonic.
+
+
+
+
+
+## A3.3 Lecteurs prot?g?s
+Les lecteurs prot?g?s sont les lecteurs qui encryptent les fichiers MP3. Il s'agit des anciennes g?n?rations, avant le NW-A1000.
+JSymphonic supporte ces lecteurs ? condition que le fichier "DvID.dat" soit pr?sent dans le lecteur. Ce fichier contient la cl? qui sert ? encrypter les fichiers MP3. Ce fichier est g?n?r? lors de l'utilisation du "MP3 File Manager" de Sony (http://www.sonydigital-link.com/DNA/downloads/downloads.asp?r=www.google.fr&c=WM&sc=NWF&t=lp&f=lp_mp3&l=en). Le File Manager cr?e un dossier "MP3FM" ? la racine du lecteur et y place (entre autre) le fichier de cl? "DvID.dat".
+
+Le fichier "DvID.dat" peut s'appeller "DvID.dat" ou "DvID.DAT" (JSymphonic est sensible ? la casse). Il peut ?tre plac? :
+- dans le dossier MP3FM
+- ? la racine du lecteur
+- dans le dossier OMGAUDIO
+
+Remarquez que le fait de crypter les fichiers prend plus de temps qu'un simple copie. Les transferts sont donc plus lents pour les anciennes g?n?rations.
+
+
+
+
+## A3.4 Lecteurs non prot?g?s
+Attention, si votre lecteur n'est pas prot?g? (post?rieur au NW-A1000 inclus), il ne doit pas y avoir sur le lecteur de fichier DvID.dat o? sinon JSymphonic encryptera les fichiers, se qui peut en rendre la lecture impossible !
+
+
+
+
+
+
+
+
+
+
+##########################################
+#### A4. Utilisation du logiciel
+
+## A4.1 Les fonctionnalit?s
+Liste des fonctionnalit?s impl?ment?es dans cette version :
+- support des lecteurs "prot?g?" et "non-prot?g?s"
+- import de musique (c-a-d depuis l'ordinateur vers le lecteur)
+- suppression de musique sur le lecteur
+- gestion des informations de base : nom de la chanson, de l'artiste, de l'album, genre, num?ro de piste
+- export de musique (c-a-d depuis le lecteur vers l'ordinateur)
+- support du mp3
+
+Liste des fonctionnalit?s ? venir (dans un ordre al?atoire)
+- support des lecteurs "tr?s vielles g?n?rations, type NW-E99"
+- support des informations plus pouss?es : pochettes, playlists,...
+- modification dans le logiciel des informations des titres contenus dans le lecteur
+- transcodage des formats non support?s pour pouvoir importer de la musique qui n'est pas encod?e en mp3
+- ...
+
+Fonctionnalit?s hasardeuses
+- le logiciel est sens? lire les tags des fichiers MP3 pour ?crire les informations des titres import?s dans le lecteur... mais des fois ?a ne le fait pas comme c'est attendu
+- le logiciel semble g?rer sans probl?me les accents lorsque qu'il est ex?cut? sous Windows, sous Linux par contre, seul l'utf-8 est support? (? v?rifier)
+
+
+
+
+
+
+## A4.2 Comment se servir du programme
+# Configuration
+Lors du premier d?marrage, si le lecteur n'est pas trouv?, une fen?tre d'avertissement est affich?e et vous ?tes directement envoy? dans la configuration du logiciel (aussi accessible par le menu).
+
+Dans la configuration, dans la page "Paths", vous r?glez les diff?rents chemins (ou adresses) ? utiliser :
+- "device path" : le chemin du lecteur (attention, le logiciel cherche ? cette adresse un dossier nomm? "OMGAUDIO" ou "omgaudio", si le lecteur est vide (format?), il vous faut au moins cr?er ce dossier)
+
+- "local music path" : le chemin qui sera utilis? par d?faut ? l'ouverture du logiciel comme dossier musical (qui apparaitera ? gauche de l'?cran)
+
+- "exported music path" : le chemin qui sera utilis? pour enregistrer la musique qui sera export?e du lecteur vers l'ordinateur. Vous pouvez utiliser le m?me chemin que celui repr?sentant le dossier de musique local en cochant la case correspondante.
+
+Pour finir avec la configuration, la page "Display" permet d'utiliser (gr?ce ? la derni?re version de Java) le style graphique de votre OS. Cliquez et tester !
+
+Note au utilisateur linuxien : l'interface GTK n'a pas l'air super au point, et il y a des bugs d'affichage que vous ne verrez pas avec le th?me metal par dafaut de Java... je n'y suis pour rien, mais vous pouvez quand m?me rapporter les bugs...
+
+
+
+# Utilisation du logiciel :
+
+- Import de musique depuis l'ordinateur vers le lecteur : il vous suffit de choisir dans la fenetre de gauche les fichiers ou dossiers que vous voulez ajout? (s?lection multiple possible) et de presser le bouton "Import", les nouveaux fichiers apparaisent instantan?ment dans la liste des titres sur le lecteur. Il faut appuyer sur le bouton "Apply" pour appliquer les changements.
+
+- Suppression de musique : il vous suffit de choisir dans l'arbre des titres qui sont sur le lecteur les titres ou groupes de titres que vous voulez supprimer et cliquer sur le bouton "Delete", pour appliquer les changements, appuyer sur "Apply".
+
+- Export de musique depuis le lecteur vers l'ordinateur : choisissez les titres ? exporter dans l'arbre des titres qui sont sur le lecteur, et cliquez sur "Export", rien ne change dans l'interface graphique, mais le changement est en m?moire, et vous pouvez l'appliquer en appuyant sur "Apply".
+
+- Annuler les changements en cours avec le bouton "cancel"
+
+- Attention, si votre lecteur est prot?g?, lisez la partie A3.3.
+
+
+Bon, en gros j'ai expliqu? les grandes lignes, je vous laisse d?couvrir les d?tails vous m?me.
+
+
+
+
+
+
+
+
+
+
+##########################################
+#### A5. Le programme ne marche pas comme je voudrais, qu'est-ce que je fais ?
+
+## A5.1 Il s'agit d'un bug
+
+Pour rapporter les bugs, utilisez le forum du projet Symphonic herberg? chez Sourceforge, ? l'adresse :
+https://sourceforge.net/forum/forum.php?forum_id=747001
+
+
+
+## A5.2 Il s'agit d'une fonctionnalit? mal ou pas cod?e
+
+Vous ?tes les bienvenus pour porposer des am?liorations du logiciel, d'une part sur les fonctionnalit?s manquantes, et d'autre part sur les fonctionnalit?s existantes qui ne sont peut ?tre pas pratique ? utiliser telles quelles. Pour proposer des am?liorations, utilisez le forum du projet Symphonic herberg? chez Sourceforge, ? l'adresse :
+https://sourceforge.net/forum/forum.php?forum_id=747000
+
+
+
+
+
+
+
+
+
+####################################################################################
+####################################################################################
+
+
+
+
+
+
+
+
+
+

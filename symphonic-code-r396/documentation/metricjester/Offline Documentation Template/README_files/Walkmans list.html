@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+	<title>JSymphonic: Documentation</title>
+<!-- *CSS* -->
+	<style type="text/css">
+		body { margin: 0; padding: 0; background: #FFFFFF url(images/img01.jpg) repeat-x; font: 15px Arial, Helvetica, sans-serif; color: black; min-width: 800px; }
+
+		#header{background: #f9c770; padding: 20px; border: solid #e64415 ; border-width: 0 2px 2px 2px; width: 90%; margin: 0 auto; height: 200px;}
+		#header h1, #header h1 a {color: #e64415;}
+		#header h1 a:hover {text-decoration: underline; padding-top: 50px;}
+		#header a, #header a img {color: #e64415; text-decoration: none; border: none;}
+		#header a:hover, #header a:hover img {color: #e64415; text-decoration: underline; border: none;}
+		#header img {float: left;}
+
+		h1, h1 a, h2, h2 a, h3, h3 a { margin: 0; text-decoration: none; font-weight: normal; color: black; clear: both; }
+		h1 { letter-spacing: -1px; font-size: 2.2em; }
+		h2 { letter-spacing: -1px; font-size: 2em; }
+		h3 { font-size: 1em; }
+
+		p, ol, ul { margin-bottom: 2em; line-height: 200%; }
+
+		blockquote { margin: 0 0 0 1.5em; padding-left: 1em; border-left: 5px solid #DDDDDD; }
+
+		a { color: #eb660c; }
+		a:hover { text-decoration: none; }
+
+		#content { padding: 40px 40px 40px 40px; }
+		#content img { border: 0px none; margin: 5px; float: left; vertical-align: center; }
+		#content h3{ letter-spacing: -1px; font-weight: bold; font-size: 1.5em; padding: 10px 0 10px 30px; margin: 0; }
+		#content h4{ letter-spacing: -1px; font-weight: bold; font-size: 1.3em; color: #e64414; padding: 10px 0 10px 60px; margin: 0; }
+		#content h5{ letter-spacing: -1px; font-weight: bold; font-size: 1.15em; color: #eb660c; padding: 10px 0 10px 90px; margin: 0; }
+
+		.indent { margin : 10px; padding : 0 5px 0 40px; border-left : 5px solid #F1F1F1; border-top: 1px solid #F1F1F1; border-bottom: 1px solid #F1F1F1; border-right: 1px solid #F1F1F1; color: #626262; }
+
+		.toc, .toc a, .toc a:link, .toc a:visited, .toc a:active, .toc a:hover, .toc h3, .toc h4, .toc a h3, .toc a h4 { margin: 0; padding: 0; line-height: normal; text-decoration: none; }
+		.toc { border-bottom: 1px dashed #e64414; padding-bottom: 30px; margin-bottom: 50px; }
+		.toc h3 a, .toc h3 a:link, .toc h3 a:visited, .toc h3 a:active, .toc h3 a:hover{ padding-left: 10px; line-height: 20px; letter-spacing: normal; font-weight: normal; font-size: 0.9em; }
+		.toc h3 a:hover{ text-decoration: underline; }
+		.toc h4 a, .toc h4 a:link, .toc h4 a:visited, .toc h4 a:active, .toc h4 a:hover{ padding-left: 30px; line-height: 15px; letter-spacing: normal; font-weight: normal; font-size: 0.9em; color: #e64414; }
+		.toc h4 a:hover{ text-decoration: underline; }
+
+		.up, .up a{ color: #e64414; font-size: 14px; }
+		.up:hover{ text-decoration: underline; }
+
+		.walkmans_list{ text-align: center; border: 1px solid #e64414; }
+		.walkmans_list th{ padding: 5px; border: 1px solid #e64414; background: #f9c770; color: #e64414;}
+		.walkmans_list tr{ border: 1px solid #e64414;}
+		.walkmans_list td{ padding: 5px; border: 1px solid #e64414;}
+		.walkmans_list img{ height: 100px; width: 100px;}
+		.walkmans_list .unavailable{ background: #c5c5c5;}
+		.walkmans_list .missing{ background: #ff6565;}
+		.walkmans_list .implemented{ background: #9fef90;}
+		.walkmans_list .data_missing{ background: #f8e4c1;}
+		.walkmans_list .expand{ cursor: pointer;}
+		.walkmans_list .expand img{ margin: 5px 10px 0 10px;}
+		.walkmans_list .expand p{ margin: 0; padding: 0; font-style: italic; text-align: left; color: #e64414; line-height: normal;}
+		.walkmans_list .bullet{ margin-top: 0px; margin-right: 0px; margin-left: 0px; margin-bottom: 10px; height: 12px; width: 12px;}
+		.walkmans_list .expand img{ float: none;}
+		.walkmans_list .thumbs{ float: left;}
+		.walkmans_list .note{ font-size: 80%;}
+	</style>
+<!-- *META* -->
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="content-style-type" content="text/css">
+	<meta http-equiv="content-language" content="en">
+<!-- Core Meta Tags -->
+	<meta name="description" content="JSymphonic is an alternative to SonicStage to transfer music to Walkmans. JSymphonic runs under Windows, Linux and MacOS.">
+	<meta name="keywords" content="SonicStage, JSymphonic, sony, transfer, Walkman">
+	<link rel="icon" href="http://symphonic.sourceforge.net/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="http://symphonic.sourceforge.net/favicon.ico" type="image/xicon">
+</head>
+<body>
+ <!-- start header -->
+<div id="header">
+<h1><a href="http://symphonic.sourceforge.net" title="JSymphonic"><img src="Images/JSymphonic-Logo.png" alt="JSymphonic logo" />JSymphonic</a> - Walkman list</h1>
+<p><i>Offline documentation</i> - <a href="../README.html" alt="Main TOC">Back to README</a></p>
+</div>
+<!-- end header -->
+
+<!-- start content -->	
+<div id="content">      
+
+<!-- 
+To generate the Walkman list:
+ - the content of page "http://symphonic.sourceforge.net/page.php?6" should be copied instead of this explanation. But the content should only be taken between "<div class='cpage_body'>" and last occurence of "/div> </td> </tr> </table>" both excluded.
+ - The images should point to /Images/Walkman (replace "src='http://symphonic.sourceforge.net/e107_themes/images/walkmans" by "src='Images/Walkmans")
+ - The theme images should point to /Images/ (replace "src="http://symphonic.sourceforge.net/e107_themes/concrete_symphonic/images" by "src="Images/Walkmans")
+ - Links to images should point to /Images/Walkman (replace "href='http://symphonic.sourceforge.net/e107_themes/images/w" by "href='Images/W")
+-->
+  
+</div>	<!-- end content -->	
+</body>
+</html>

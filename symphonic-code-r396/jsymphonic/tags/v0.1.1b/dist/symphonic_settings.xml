@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE preferences SYSTEM "http://java.sun.com/dtd/preferences.dtd">
+<preferences EXTERNAL_XML_VERSION="1.0">
+  <root type="user">
+    <map/>
+    <node name="org">
+      <map/>
+      <node name="naurd">
+        <map/>
+        <node name="media">
+          <map/>
+          <node name="jsymphonic">
+            <map/>
+            <node name="manager">
+              <map>
+                <entry key="DevicePath" value="./"/>
+                <entry key="LAF" value="0"/>
+		<entry key="MusicPath" value="invalid path"/>
+		<entry key="OMGAUDIOpath" value="./OMGAUDIO"/>
+              </map>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+</preferences>

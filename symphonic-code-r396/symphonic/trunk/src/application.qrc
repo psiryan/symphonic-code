@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/" >
+        <file>NWA1200.xpm</file>
+	<file>Symphonic.xpm</file>
+    </qresource>
+</RCC>
